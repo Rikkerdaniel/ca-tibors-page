@@ -19,9 +19,38 @@ main {
     position: relative;
 }
 
+.card.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(Tibor.Szasz.min.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: purple;
+}
+
+.card.title h1 {
+    border: 6px solid #fff;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+    font-family: 'Chivo', sans-serif;
+    text-transform: uppercase;
+    width: 200px;
+}
+
+    .card.title h1:after {
+        content: '';
+        display: block;
+        border: 3px solid #fff;
+        width: 50px;
+        margin: auto;
+        margin-top: 1rem;
+    }
+
 .card.half {
     height: 400px;
-    background: yellow;
     flex: 1 1 50%;
 }
 
