@@ -95,7 +95,44 @@ main {
 }
 
 .card.third {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     height: 290px;
     background: limegreen;
     flex: 1 1 33%;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+.card.third.black {
+    color: #fff;
+    background: black;
+}
+    .card.third.black h1 {
+        color: #000;
+        position: relative;
+        z-index: 1; 
+        font-size: 1rem;
+        line-height: 4rem;
+    }
+
+    .card.third.black h1:after {
+        content: '';
+        width: 70px;
+        height: 70px;
+        display: block;
+        background: #fff;
+        transform: rotate(45deg);       
+        position: relative;
+        z-index: -1;
+        top: -66px; 
+    }
+
+.card.third.white {
+    color: #000;
+    background: white;
 }
