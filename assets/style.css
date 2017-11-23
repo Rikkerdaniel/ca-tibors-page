@@ -136,3 +136,15 @@ main {
     color: #000;
     background: white;
 }
+
+@media (max-width: 1092px ) {
+    .card.half {
+        height: 500px;
+    }
+}
+
+@media (max-width: 847px ) {
+    .card.half, .card.third {
+        flex: 1 1 100%;
+    }
+}
