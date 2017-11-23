@@ -35,13 +35,14 @@ main {
     }
 
 .card {
-    position: relative;
-}
-
-.card.title {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.card.title {
     background-image: url(Tibor.Szasz.min.jpg);
     background-position: center center;
     background-size: cover;
@@ -95,10 +96,6 @@ main {
 }
 
 .card.third {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     height: 290px;
     background: limegreen;
     flex: 1 1 33%;
@@ -135,6 +132,17 @@ main {
 .card.third.white {
     color: #000;
     background: white;
+}
+
+.card.image {
+    background: url(presenter_full.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.instafx {
+    box-shadow: 0 30px 100px rgba(0,0,0,0.65) inset;
+    filter: sepia(0.3);
 }
 
 @media (max-width: 1092px ) {
