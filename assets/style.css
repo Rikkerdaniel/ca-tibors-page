@@ -1,4 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
+    padding: 3rem;
+    background: black;
+}
+
+main {
     background: tomato;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+}
+
+.card.half {
+    height: 400px;
+    background: yellow;
+    flex: 1 1 50%;
+}
+
+.card.third {
+    height: 290px;
+    background: limegreen;
+    flex: 1 1 33%;
 }
